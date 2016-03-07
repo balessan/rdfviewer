@@ -28,9 +28,9 @@
 function restart(){
    loadVal = $.getUrlVar("url")
     if (loadVal != null) {
-        url.value = decodeURIComponent(loadVal);
+        loadVal = decodeURIComponent(loadVal);
     }
-    viewrdf("#chart",1000,1000,url.value,300);
+    viewrdf("#chart",1000,1000,loadVal,300);
 }
 restart();
    </script>
